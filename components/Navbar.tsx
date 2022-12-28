@@ -12,7 +12,7 @@ function Navbar() {
     >
       <div className='flex flex-row align-middle justify-between lg:max-w-4xl mx-auto'>
         <p>Heisann!</p>
-        <div>{wish}</div>
+        <div>{date}</div>
       </div>
     </div>
   );
