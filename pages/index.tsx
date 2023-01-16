@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import WIPBackground from '../components/WIPBackground';
 import Navbar from '../components/Navbar';
 import Head from 'next/head';
+import Footer from '../components/Footer';
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
         <Navbar />
         <WIPBackground />
       </div>
+      <Footer />
     </>
   );
 };
