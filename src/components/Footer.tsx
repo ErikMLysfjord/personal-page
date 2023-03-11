@@ -18,7 +18,7 @@ const Footer = () => {
           style={{ gridArea: 'about' }}
         >
           <span className='flex items-center w-full'>
-            <p className='text-center font-bold'>Mer om meg:</p>
+            <p className='text-center font-bold'>More of me:</p>
           </span>
           <span className='flex items-center w-full'>
             <Link
@@ -42,7 +42,7 @@ const Footer = () => {
           style={{ gridArea: 'contact' }}
         >
           <span className='flex items-center w-full'>
-            <span className='font-bold'>Kontakt meg:</span>
+            <span className='font-bold'>Contact me:</span>
           </span>
           <span className='flex items-center w-full'>
             <a href='mailTo:erik.menkin@lysfjord.no'>erik.menkin@lysfjord.no</a>

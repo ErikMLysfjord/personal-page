@@ -3,10 +3,8 @@
 @tailwind utilities;
 
 @layer utilities {
-  .pause {
-    animation-play-state: paused;
-  }
-  .running {
-    animation-play-state: running;
+  .delay {
+    animation-delay: 5.3s;
+    border-right: 2px solid transparent;
   }
 }
