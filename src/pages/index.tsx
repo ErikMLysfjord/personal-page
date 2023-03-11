@@ -3,6 +3,7 @@ import WIPBackground from '../components/WIPBackground';
 import Navbar from '../components/Navbar';
 import Head from 'next/head';
 import Footer from '../components/Footer';
+import TextAnimator from '../components/TextAnimator';
 
 const Home: NextPage = () => {
   return (
@@ -12,7 +13,8 @@ const Home: NextPage = () => {
       </Head>
       <div className='h-screen w-screen bg-slate-300 dark:bg-zinc-900'>
         <Navbar />
-        <WIPBackground />
+        {/* <WIPBackground /> */}
+        <TextAnimator text='Hey, my name is Erik Menkin Lysfjord' />
       </div>
       <Footer />
     </>
