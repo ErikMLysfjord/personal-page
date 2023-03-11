@@ -3,9 +3,9 @@ module.exports = {
   darkMode: 'class',
   content: [
     './node_modules/flowbite-react/**/*.js',
-    './pages/**/*.{ts,tsx}',
-    './public/**/*.html',
-    './components/**/*.{ts,tsx}',
+    './src/pages/**/*.{ts,tsx}',
+    './src/public/**/*.html',
+    './src/components/**/*.{ts,tsx}',
   ],
   theme: {
     extend: {},

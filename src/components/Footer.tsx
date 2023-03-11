@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 
 const Footer = () => {
+  const temp = {};
+
   return (
     <footer className='h-auto w-full bg-slate-300 dark:bg-zinc-900 border-t dark:border-slate-700/50 border-slate-900/10'>
       <div
