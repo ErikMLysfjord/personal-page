@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Footer from '../components/Footer';
+import FunFactComponent from '../components/FunFactComponent';
 import TextAnimator from '../components/TextAnimator';
 
 const Home: NextPage = () => {
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
           text='Scroll to learn more about me'
         />
       </div>
+      <FunFactComponent />
       <Footer />
     </>
   );
