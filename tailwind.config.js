@@ -12,11 +12,11 @@ module.exports = {
       animation: {
         type: 'typing 4s steps(50) 2.3s 1 normal both, blinkCaret 1s step-end 5',
         typeDark:
-          'typing 4s steps(50) 1.3s 1 normal both, blinkCaretDark 0.75s step-end infinite',
+          'typing 4s steps(50) 2.3s 1 normal both, blinkCaretDark 1s step-end 5',
         typeSlow:
           'typing 5s steps(50) 0s 1 normal both, blinkCaret 1s step-end infinite',
         typeSlowDark:
-          'typing 5s steps(50) 8s 1 normal both, blinkCaretDark 0.75s step-end infinite',
+          'typing 5s steps(50) 0s 1 normal both, blinkCaretDark 1s step-end infinite',
       },
       keyframes: {
         typing: {
