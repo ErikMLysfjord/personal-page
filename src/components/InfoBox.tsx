@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useNavigate } from 'react-router-dom';
 import Icon from '../../public/icon.png';
 import LinkedIn from '../../public/LinkedIn.svg';
 import Mail from '../../public/Mail.svg';
@@ -21,7 +22,7 @@ const InfoBox: React.FC = () => {
             objectFit={'contain'}
           />
         </div>
-        <div className='h-full w-full'>
+        <div className='h-full w-full overflow-auto'>
           <h1 className='text-4xl font-bold mt-6'>
             Hey, my name is <br />
             Erik Menkin Lysfjord
@@ -39,12 +40,29 @@ const InfoBox: React.FC = () => {
           <br />
           <p>Scroll to read more of me and look at some of my projects!</p>
           <br />
-          <div className='w-32 h-32'>
-            <div className='w-1/2 h-auto relative'>
-              <Image src={LinkedIn} alt={'LinkedIn'} />
+          <br />
+          <div className='w-1/3 h-auto flex flex-row justify-evenly'>
+            <div className='w-2/5 h-auto relative'>
+              <Image
+                src={LinkedIn}
+                alt={'LinkedIn'}
+                className='hover:cursor-pointer'
+                onClick={() =>
+                  window.location.assign(
+                    'https://www.linkedin.com/in/erik-menkin-lysfjord/',
+                  )
+                }
+              />
             </div>
-            <div className='w-1/2 h-auto relative'>
-              <Image src={Mail} alt={'Mail'} />
+            <div className='w-2/5 h-auto relative'>
+              <Image
+                src={Mail}
+                alt={'Mail'}
+                className='hover:cursor-pointer'
+                onClick={() =>
+                  (window.location.href = 'mailto:erik.menkin@lysfjord.no')
+                }
+              />
             </div>
           </div>
           <div></div>
