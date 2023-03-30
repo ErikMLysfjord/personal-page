@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Footer from '../components/Footer';
 import FunFactComponent from '../components/FunFactComponent';
+import InfoBox from '../components/InfoBox';
 import TextAnimator from '../components/TextAnimator';
 
 const Home: NextPage = () => {
@@ -11,13 +12,17 @@ const Home: NextPage = () => {
         <title>Erik Menkin Lysfjord</title>
         <meta name='description' content='Portfolio page' />
       </Head>
-      <div className='h-screen w-screen bg-slate-300 dark:bg-zinc-900'>
-        <TextAnimator
+      <div
+        style={{ backgroundColor: '#FCDA9A' }}
+        className='h-screen w-screen '
+      >
+        {/* <TextAnimator
           header='Hey, my name is Erik Menkin Lysfjord'
           text='Scroll to learn more about me'
-        />
+        /> */}
+        <InfoBox />
       </div>
-      <FunFactComponent />
+      {/* <FunFactComponent /> */}
       <Footer />
     </>
   );

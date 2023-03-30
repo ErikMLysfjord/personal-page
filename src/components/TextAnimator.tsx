@@ -5,6 +5,7 @@ type Props = {
 
 const TextAnimator: React.FC<Props> = ({ header, text }) => {
   return (
+    /* bg-amber-200 eller bg-orange-200 eller bg-orange-100 eller #fcda9a */
     <div className='h-full w-full flex justify-center items-center bg-slate-300 dark:bg-zinc-900 flex-col'>
       <h1 className='animate-type dark:animate-typeDark overflow-hidden whitespace-nowrap tracking-wide max-w-fit border-r-2 border-r-transparent dark:border-r-transparent text-4xl font-monospace'>
         {header}
