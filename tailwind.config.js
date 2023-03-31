@@ -17,6 +17,7 @@ module.exports = {
           'typing 5s steps(50) 0s 1 normal both, blinkCaret 1s step-end infinite',
         typeSlowDark:
           'typing 5s steps(50) 0s 1 normal both, blinkCaretDark 1s step-end infinite',
+        fadeIn: 'fadeInAnimation 1s ease',
       },
       keyframes: {
         typing: {
@@ -36,6 +37,11 @@ module.exports = {
           from: { borderColor: 'transparent' },
           to: { borderColor: 'transparent' },
           '50%': { borderColor: 'white' },
+        },
+        fadeInAnimation: {
+          from: { opacity: 0, transform: 'translateX(-500px)' },
+          to: { opacity: 1, transform: 'translateX(0)' },
+          '70%': { opacity: 0 },
         },
       },
     },

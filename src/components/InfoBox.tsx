@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useNavigate } from 'react-router-dom';
 import Icon from '../../public/icon.png';
-import LinkedIn from '../../public/LinkedIn.svg';
+import LinkedIn from '../../public/linkedin.svg';
 import Mail from '../../public/Mail.svg';
 
 const InfoBox: React.FC = () => {
