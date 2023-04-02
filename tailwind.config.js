@@ -14,6 +14,7 @@ module.exports = {
     extend: {
       spacing: {
         325: '13px',
+        negative: '-8px',
       },
       animation: {
         type: 'typing 4s steps(50) 2.3s 1 normal both, blinkCaret 1s step-end 5',

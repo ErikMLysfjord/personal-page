@@ -56,12 +56,14 @@ const Hero: React.FC = () => {
             I am a Computer Science student.
           </h2>
         </div>
-        <div className='mb-20 absolute bottom-0 left-1/2 animate-fadeInScroll'>
-          <a onClick={() => handleScroll()}>
-            {/* Change animation to purple background color, white arrow?¿ */}
-            {/* <span className='rounded-full border-minLilla/0 border w-11 h-11 box-border absolute left-1/2 after:rotate-45 after:border-b-2 after:border-r-2 after:w-4 after:h-4 after:border-minLilla after:absolute after:box-border after:ml-325 after:mt-2.5 hover:border-white delay-75 hover:bg-minLilla hover:cursor-pointer transition ease-in-out' /> */}
-            <span className='rounded-full border-minLilla/0 border w-11 h-11 box-border absolute left-1/2 after:rotate-45 after:border-b-2 after:border-r-2 after:w-4 after:h-4 after:border-minLilla after:absolute after:box-border after:ml-325 after:mt-2.5 delay-75 hover:border-minLilla hover:cursor-pointer transition ease-in-out' />
-          </a>
+        <div className='mb-20 w-full absolute bottom-0 flex flex-col justify-center items-center animate-fadeInScroll'>
+          <div>
+            <button onClick={() => handleScroll()}>
+              {/* Change animation to purple background color, white arrow?¿ */}
+              {/* <span className='rounded-full border-minLilla/0 border w-11 h-11 box-border absolute left-1/2 after:rotate-45 after:border-b-2 after:border-r-2 after:w-4 after:h-4 after:border-minLilla after:absolute after:box-border after:ml-325 after:mt-2.5 hover:border-white delay-75 hover:bg-minLilla hover:cursor-pointer transition ease-in-out' /> */}
+              <span className='rounded-full border-minLilla/0 border w-11 h-11 box-border inline-block after:rotate-45 after:border-b-2 after:border-r-2 after:w-4 after:h-4 after:border-minLilla after:absolute after:box-border after:ml-negative after:mt-2.5 after:inline-block delay-75 hover:border-minLilla hover:cursor-pointer transition ease-in-out' />
+            </button>
+          </div>
         </div>
       </div>
     </div>

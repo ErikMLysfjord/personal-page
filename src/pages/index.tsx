@@ -1,12 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import About from '../components/About';
-import ThemeToggler from '../components/DarkmodeButton';
-import Footer from '../components/Footer';
-import FunFactComponent from '../components/FunFactComponent';
 import Hero from '../components/Hero';
-import InfoBox from '../components/InfoBox';
-import TextAnimator from '../components/TextAnimator';
 
 const Home: NextPage = () => {
   return (
