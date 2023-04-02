@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import About from '../components/About';
 import ThemeToggler from '../components/DarkmodeButton';
 import Footer from '../components/Footer';
 import FunFactComponent from '../components/FunFactComponent';
@@ -23,9 +24,9 @@ const Home: NextPage = () => {
           text='Scroll to learn more about me'
         /> */}
         <Hero />
+        <About />
       </div>
       {/* <FunFactComponent /> */}
-      <Footer />
     </>
   );
 };

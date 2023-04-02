@@ -8,7 +8,13 @@ module.exports = {
     './src/components/**/*.{ts,tsx}',
   ],
   theme: {
+    colors: {
+      minLilla: '#9738A7',
+    },
     extend: {
+      spacing: {
+        325: '13px',
+      },
       animation: {
         type: 'typing 4s steps(50) 2.3s 1 normal both, blinkCaret 1s step-end 5',
         typeDark:
@@ -18,6 +24,7 @@ module.exports = {
         typeSlowDark:
           'typing 5s steps(50) 0s 1 normal both, blinkCaretDark 1s step-end infinite',
         fadeIn: 'fadeInAnimation 1s ease',
+        fadeInScroll: 'fadeInScrollAnimation 4s ease',
       },
       keyframes: {
         typing: {
@@ -42,6 +49,11 @@ module.exports = {
           from: { opacity: 0, transform: 'translateX(-500px)' },
           to: { opacity: 1, transform: 'translateX(0)' },
           '70%': { opacity: 0 },
+        },
+        fadeInScrollAnimation: {
+          from: { opacity: 0 },
+          '60%': { opacity: 0 },
+          to: { opacity: 1 },
         },
       },
     },
