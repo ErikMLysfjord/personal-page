@@ -10,6 +10,8 @@ module.exports = {
   theme: {
     colors: {
       minLilla: '#9738A7',
+      black: '#000000',
+      white: '#FFFFFF',
     },
     extend: {
       spacing: {
@@ -24,8 +26,10 @@ module.exports = {
           'typing 5s steps(50) 0s 1 normal both, blinkCaret 1s step-end infinite',
         typeSlowDark:
           'typing 5s steps(50) 0s 1 normal both, blinkCaretDark 1s step-end infinite',
-        fadeIn: 'fadeInAnimation 1s ease',
+        jumpIn: 'jumpInAnimation 1s ease',
         fadeInScroll: 'fadeInScrollAnimation 4s ease',
+        circleIn: 'circleDescending 2s normal forwards',
+        fadeIn: 'fadeIn 2.5s ease',
       },
       keyframes: {
         typing: {
@@ -46,12 +50,21 @@ module.exports = {
           to: { borderColor: 'transparent' },
           '50%': { borderColor: 'white' },
         },
-        fadeInAnimation: {
+        jumpInAnimation: {
           from: { opacity: 0, transform: 'translateX(-500px)' },
           to: { opacity: 1, transform: 'translateX(0)' },
           '70%': { opacity: 0 },
         },
         fadeInScrollAnimation: {
+          from: { opacity: 0 },
+          '60%': { opacity: 0 },
+          to: { opacity: 1 },
+        },
+        circleDescending: {
+          from: { transform: 'translateY(-100%)' },
+          to: { transform: 'translateY(0%)' },
+        },
+        fadeIn: {
           from: { opacity: 0 },
           '60%': { opacity: 0 },
           to: { opacity: 1 },
