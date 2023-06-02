@@ -10,18 +10,10 @@ const Home: NextPage = () => {
         <title>Erik Menkin Lysfjord</title>
         <meta name='description' content='Portfolio page' />
       </Head>
-      <div
-        /* style={{ backgroundColor: '#FCDA9A' }} */
-        className='h-screen w-screen '
-      >
-        {/* <TextAnimator
-          header='Hey, my name is Erik Menkin Lysfjord'
-          text='Scroll to learn more about me'
-        /> */}
+      <div className='h-screen w-screen'>
         <Hero />
         <About />
       </div>
-      {/* <FunFactComponent /> */}
     </>
   );
 };

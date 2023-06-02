@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <div className='w-full h-full'>
+    <div className='w-full h-full z-50 relative bg-white'>
       <nav className='absolute right-0 flex flew-row p-8 justify-between w-60'>
         <Link href={'https://www.linkedin.com/in/erik-menkin-lysfjord/'}>
           <a target='_blank' rel='noopener noreferrer'>
@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
         </div>
       </nav>
       <div className='flex justify-center flex-col w-full h-full'>
-        <div style={{ fontSize: '56px' }} className='p-10  animate-fadeIn'>
+        <div style={{ fontSize: '56px' }} className='p-10  animate-jumpIn'>
           <h1 className='font-sans'>
             Hey, my name is{' '}
             <span className='text-minLilla'>Erik Menkin Lysfjord.</span>
