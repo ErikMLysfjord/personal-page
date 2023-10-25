@@ -1,7 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import About from '../components/About';
-import Hero from '../components/Hero';
+import About from './About';
+import Hero from './Hero';
+import ProjectsPage from './Projects';
 
 const Home: NextPage = () => {
   return (
@@ -10,9 +11,10 @@ const Home: NextPage = () => {
         <title>Erik Menkin Lysfjord</title>
         <meta name='description' content='Portfolio page' />
       </Head>
-      <div className='h-screen w-screen'>
+      <div className='h-screen w-screen overflow-auto snap-y snap-mandatory'>
         <Hero />
         <About />
+        <ProjectsPage />
       </div>
     </>
   );

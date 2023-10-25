@@ -3,15 +3,20 @@ import Link from 'next/link';
 import LinkedIn from '../../public/LinkedIn.svg';
 import Github from '../../public/github-mark.svg';
 import CV from '../../public/cv.svg';
+import { useEffect } from 'react';
 
 const Hero: React.FC = () => {
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+  }, []);
+
   const handleScroll = () => {
     const about = document.getElementById('about');
     about?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <div className='w-full h-full z-50 relative bg-white'>
+    <div className='w-full h-full z-50 relative bg-white snap-center'>
       <nav className='absolute right-0 flex flew-row p-8 justify-between w-60'>
         <Link href={'https://www.linkedin.com/in/erik-menkin-lysfjord/'}>
           <a target='_blank' rel='noopener noreferrer'>
@@ -47,7 +52,7 @@ const Hero: React.FC = () => {
         </div>
       </nav>
       <div className='flex justify-center flex-col w-full h-full'>
-        <div style={{ fontSize: '56px' }} className='p-10  animate-fadeIn'>
+        <div style={{ fontSize: '56px' }} className='p-10  animate-jumpIn'>
           <h1 className='font-sans'>
             Hey, my name is{' '}
             <span className='text-minLilla'>Erik Menkin Lysfjord.</span>
